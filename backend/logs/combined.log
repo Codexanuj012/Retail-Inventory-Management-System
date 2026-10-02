@@ -1,0 +1,13 @@
+[2026-10-02T16:59:17.592Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-02T16:59:17.613Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-02T16:59:17.622Z] [INFO]: RIMS Server running on port 5000 in development mode
