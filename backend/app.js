@@ -10,6 +10,8 @@ const { successResponse } = require('./utils/response');
 // Import Routes
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 
@@ -46,6 +48,8 @@ app.get('/api/health', (req, res) => {
 // Mount Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/categories', categoryRoutes);
+app.use('/api/products', productRoutes);
 
 // 404 Route Handler
 app.use(notFoundHandler);
