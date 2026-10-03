@@ -7,6 +7,10 @@ const env = require('./config/env');
 const { notFoundHandler, globalErrorHandler } = require('./middleware/errorMiddleware');
 const { successResponse } = require('./utils/response');
 
+// Import Routes
+const authRoutes = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
+
 const app = express();
 
 // Security Middlewares
@@ -38,6 +42,10 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+// Mount Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 // 404 Route Handler
 app.use(notFoundHandler);
