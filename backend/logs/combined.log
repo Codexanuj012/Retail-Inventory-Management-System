@@ -11,3 +11,120 @@
     at Readable.push (node:internal/streams/readable:390:5)
 [2026-10-02T16:59:17.613Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
 [2026-10-02T16:59:17.622Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T07:40:34.707Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T07:40:34.724Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T07:40:34.736Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:28:06.428Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:28:06.448Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:28:06.473Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:28:38.708Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:28:38.710Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:28:38.714Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:29:41.899Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:29:41.902Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:29:41.900Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:31:52.220Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:31:52.230Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:31:52.270Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:32:07.224Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:32:07.222Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:32:07.226Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:38:05.647Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:38:05.652Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:38:05.648Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:39:58.694Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:39:58.756Z] [INFO]: RIMS Server running on port 5000 in development mode
+[2026-10-03T08:39:58.711Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:40:13.864Z] [ERROR]: Failed to connect to MySQL database: Error: Unknown database 'rims_db'
+    at Packet.asError (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+    at ClientHandshake.execute (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:616:34)
+    at PacketParser.onPacket (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:148:12)
+    at PacketParser.executeStart (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\packet_parser.js:86:16)
+    at Socket.<anonymous> (E:\HCL Main Project\RIMS\backend\node_modules\mysql2\lib\base\connection.js:156:25)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+[2026-10-03T08:40:13.865Z] [WARN]: Server starting with database connection warning. Ensure MySQL is running.
+[2026-10-03T08:40:13.867Z] [INFO]: RIMS Server running on port 5000 in development mode
