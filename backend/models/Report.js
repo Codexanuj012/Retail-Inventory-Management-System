@@ -78,6 +78,57 @@ class Report {
     const [rows] = await pool.query(query, [String(limit)]);
     return rows;
   }
+
+  static async getInventoryValuation() {
+    const query = `
+      SELECT 
+        p.id AS product_id,
+        p.name AS product_name,
+        p.sku,
+        c.name AS category_name,
+        COALESCE(SUM(i.quantity), 0) AS total_stock,
+        p.cost_price,
+        p.unit_price,
+        (COALESCE(SUM(i.quantity), 0) * p.cost_price) AS total_cost_value,
+        (COALESCE(SUM(i.quantity), 0) * p.unit_price) AS total_retail_value
+      FROM products p
+      LEFT JOIN categories c ON p.category_id = c.id
+      LEFT JOIN inventory i ON p.id = i.product_id
+      WHERE p.is_active = TRUE
+      GROUP BY p.id, p.name, p.sku, c.name, p.cost_price, p.unit_price
+      ORDER BY total_cost_value DESC
+    `;
+    const [rows] = await pool.execute(query);
+    return rows;
+  }
+
+  static async getSalesReport({ startDate, endDate }) {
+    let whereClause = "WHERE o.order_type = 'SALES' AND o.status = 'COMPLETED'";
+    const queryParams = [];
+
+    if (startDate) {
+      whereClause += " AND o.created_at >= ?";
+      queryParams.push(startDate);
+    }
+    if (endDate) {
+      whereClause += " AND o.created_at <= ?";
+      queryParams.push(endDate);
+    }
+
+    const query = `
+      SELECT 
+        o.id AS order_id,
+        CONCAT(u.first_name, ' ', u.last_name) AS sales_rep,
+        o.total_amount,
+        o.created_at
+      FROM orders o
+      JOIN users u ON o.user_id = u.id
+      ${whereClause}
+      ORDER BY o.created_at DESC
+    `;
+    const [rows] = await pool.execute(query, queryParams);
+    return rows;
+  }
 }
 
 module.exports = Report;
