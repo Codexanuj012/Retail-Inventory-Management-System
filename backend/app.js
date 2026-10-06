@@ -12,6 +12,30 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const productRoutes = require('./routes/productRoutes');
+const warehouseRoutes = require('./routes/warehouseRoutes');
+const inventoryRoutes = require('./routes/inventoryRoutes');
+const stockMovementRoutes = require('./routes/stockMovementRoutes');
+const supplierRoutes = require('./routes/supplierRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const reportRoutes = require('./routes/reportRoutes');
+
+// Runtime validation to prevent router crash
+const validateRouter = (name, routeModule) => {
+  if (typeof routeModule !== 'function') {
+    throw new TypeError(`Route module "${name}" did not export a valid Express router function.`);
+  }
+};
+
+validateRouter('authRoutes', authRoutes);
+validateRouter('userRoutes', userRoutes);
+validateRouter('categoryRoutes', categoryRoutes);
+validateRouter('productRoutes', productRoutes);
+validateRouter('warehouseRoutes', warehouseRoutes);
+validateRouter('inventoryRoutes', inventoryRoutes);
+validateRouter('stockMovementRoutes', stockMovementRoutes);
+validateRouter('supplierRoutes', supplierRoutes);
+validateRouter('orderRoutes', orderRoutes);
+validateRouter('reportRoutes', reportRoutes);
 
 const app = express();
 
@@ -50,6 +74,12 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/warehouses', warehouseRoutes);
+app.use('/api/inventory', inventoryRoutes);
+app.use('/api/stock-movements', stockMovementRoutes);
+app.use('/api/suppliers', supplierRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/reports', reportRoutes);
 
 // 404 Route Handler
 app.use(notFoundHandler);
@@ -57,4 +87,4 @@ app.use(notFoundHandler);
 // Centralized Error Handler
 app.use(globalErrorHandler);
 
-module.exports = app;
+module.exports = app; 
