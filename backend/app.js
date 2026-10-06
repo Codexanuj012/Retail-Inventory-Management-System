@@ -18,6 +18,7 @@ const stockMovementRoutes = require('./routes/stockMovementRoutes');
 const supplierRoutes = require('./routes/supplierRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const reportRoutes = require('./routes/reportRoutes');
+const auditLogRoutes = require('./routes/auditLogRoutes');
 
 // Runtime validation to prevent router crash
 const validateRouter = (name, routeModule) => {
@@ -36,6 +37,7 @@ validateRouter('stockMovementRoutes', stockMovementRoutes);
 validateRouter('supplierRoutes', supplierRoutes);
 validateRouter('orderRoutes', orderRoutes);
 validateRouter('reportRoutes', reportRoutes);
+validateRouter('auditLogRoutes', auditLogRoutes);
 
 const app = express();
 
@@ -80,6 +82,7 @@ app.use('/api/stock-movements', stockMovementRoutes);
 app.use('/api/suppliers', supplierRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/audit-logs', auditLogRoutes);
 
 // 404 Route Handler
 app.use(notFoundHandler);
